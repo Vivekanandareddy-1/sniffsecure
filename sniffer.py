@@ -16,9 +16,9 @@ import smtplib, ssl
 from email.message import EmailMessage
 
 def send_email_alert(src_ip, dst_ip, port, danger_type):
-    sender_email = "chittitherobotmachine2.0@gmail.com"
-    app_password = "awyw fvoy czqq acao"
-    recipient_email = "vivekuses2006@gmail.com"
+    sender_email = "(your sender email)"
+    app_password = "(app mail password)"
+    recipient_email = "(to which email address the notifications have to sent)"
 
     msg = EmailMessage()
     msg['Subject'] = f"SniffSecure Alert: {danger_type}"
@@ -83,3 +83,4 @@ def process_packet(packet):
 
 print("🔍 Sniffing Started... Press CTRL+C to stop")
 sniff(prn=process_packet, store=False)
+
