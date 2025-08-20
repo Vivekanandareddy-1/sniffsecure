@@ -23,9 +23,9 @@ import smtplib, ssl
 from email.message import EmailMessage
 
 # ===== Email Config =====
-sender_email = "chittitherobotmachine2.0@gmail.com"
-app_password = "awyw fvoy czqq acao"
-recipient_email = "vivekuses2006@gmail.com"
+sender_email = "(senders email address , from whcih email address the notifications have to be sent)"
+app_password = "(app mail password)"
+recipient_email = "(to which email address the alert notifications have to sent)"
 
 # ===== Port Lists =====
 safe_ports = [80, 443, 53, 22]
@@ -130,3 +130,4 @@ root.protocol("WM_DELETE_WINDOW", on_closing)
 
 # ===== Run App =====
 root.mainloop()
+
